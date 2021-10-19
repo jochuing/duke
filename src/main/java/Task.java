@@ -49,4 +49,8 @@ public class Task {
     public String getDateTime() {
         return "(" + dateTime.getCondition() + ": " + dateTime.getTime() + ")";
     }
+
+    public String toString() {
+        return this.description + "[" + getStatusIcon() + "]";
+    }
 }
